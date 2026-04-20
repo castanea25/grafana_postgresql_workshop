@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 # Connection details
 DB_SETTINGS = {
     "host": "localhost",
-    "database": "racing_data", # We can use the same DB, just a new table
+    "database": "car_data",
     "user": "admin",
     "password": "password123",
     "port": "5432"
