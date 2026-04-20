@@ -8,7 +8,7 @@
 5. Search and select `PostgreSQL`
 6. Enter these settings
      - Host: `host.docker.internal:5432`
-     - Database: `racing_data`
+     - Database: `car_data`
      - User: `admin`
      - Password: `password123`
      - TLS/SSL Mode: `disable`
