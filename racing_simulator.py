@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 # Connection details
 DB_SETTINGS = {
     "host": "localhost",
-    "database": "racing_data",
+    "database": "car_data",
     "user": "admin",
     "password": "password123",
     "port": "5432"
@@ -20,7 +20,7 @@ def run_generator():
         cur = conn.cursor()
         print("Connected! Upgrading telemetry suite...")
 
-        # 1. Drop the old table and create the new one with more columns
+        # Create a table
         cur.execute("DROP TABLE IF EXISTS car_telemetry;")
         cur.execute("""
             CREATE TABLE car_telemetry (
