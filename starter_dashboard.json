@@ -5,8 +5,8 @@
     "name": "g464gv",
     "namespace": "default",
     "uid": "2041ae4d-6b9b-48a7-98e9-131e7fe7bcd1",
-    "resourceVersion": "1776718438834990",
-    "generation": 2,
+    "resourceVersion": "1776880701664987",
+    "generation": 5,
     "creationTimestamp": "2026-04-20T20:48:33Z",
     "labels": {
       "grafana.app/deprecatedInternalID": "1695971802529792"
@@ -16,7 +16,7 @@
       "grafana.app/folder": "",
       "grafana.app/saved-from-ui": "Grafana v13.0.1 (a100054f)",
       "grafana.app/updatedBy": "anonymous:0",
-      "grafana.app/updatedTimestamp": "2026-04-20T20:53:58Z"
+      "grafana.app/updatedTimestamp": "2026-04-22T17:58:21Z"
     }
   },
   "spec": {
@@ -63,7 +63,7 @@
                       "group": "grafana-postgresql-datasource",
                       "version": "v0",
                       "datasource": {
-                        "name": "bfjoz4wgwv2tca"
+                        "name": "${datasource}"
                       },
                       "spec": {
                         "dataset": "car_data",
@@ -189,7 +189,28 @@
       "fiscalYearStartMonth": 0
     },
     "title": "Ford Dealership Executive Suite",
-    "variables": [],
+    "variables": [
+      {
+        "kind": "DatasourceVariable",
+        "spec": {
+          "name": "datasource",
+          "pluginId": "grafana-postgresql-datasource",
+          "refresh": "onDashboardLoad",
+          "regex": "",
+          "current": {
+            "text": "grafana-postgresql-datasource",
+            "value": "bfjoz4wgwv2tca"
+          },
+          "options": [],
+          "multi": false,
+          "includeAll": false,
+          "label": "Data source",
+          "hide": "dontHide",
+          "skipUrlSync": false,
+          "allowCustomValue": true
+        }
+      }
+    ],
     "preferences": {
       "layout": {
         "kind": "GridLayout",
