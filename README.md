@@ -1,4 +1,10 @@
-# grafana_postgresql_workshop
+# Ford Dealership Executive Suite
+
+## Exercises
+1. Create a **Stat** panel titled "Total Dealer Profit" that shows the sum of all profit.​
+2. Modify `exercise.py` to include a `color` column in the data table to track which paint colors are selling.​
+3. Create a **Table** panel titled "Recent Sales Activity" to see the 10 most recent sales. In the table, include the columns `sale_time`, `model`, `trim`, `color`, and `sale_price`.
+4. (Challenge) Create a **Bar Gauge** panel titled "Sales by Model" to show the total quantity sold for model, sorted to highlight the #1 selling model.​
 
 ## Setup
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/). Make sure engine is running
